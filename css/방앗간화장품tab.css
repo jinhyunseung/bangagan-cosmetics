@@ -1,0 +1,380 @@
+@media all and (min-width:641px) and (max-width:1199px){
+    #wrap{
+        width: 100%;
+        overflow: hidden;
+    }
+    .align_wrap{
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    /*---------------------tab&mobile header-------------------------------*/
+    
+    #m_header{
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f7f7f7;
+    }
+    #m_nav{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        /*수직정렬, 부모 안에서 중앙정렬*/
+        align-items: center;
+    
+    }
+    #m_btn{
+        display: none;
+    }
+    #m_label{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        
+        line-height: 100px;
+        font-size: 50px;
+        font-weight: 900;
+    }
+    #m_menubox{
+        width: 100%;
+        height: 0vh;
+        overflow: hidden;
+        transition: 1s;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        background-color: #f5f5f5;
+    }
+    .m_menu{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .m_menu>li{
+        width: 30%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 22px;
+    }
+    .m_menu>li:nth-child(2){
+        text-align: right;
+    }
+    #m_btn:checked~ #m_menubox{
+        height: 100vh;
+    } 
+    #m_zoom{
+        padding-right: 2%;
+    }
+    /*---------------------section1-------------------------------*/
+    
+    #sec1{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    #btn_wrap{
+        width: 100%;
+        height: 35px;
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+    }
+    header{
+        width: 100%;
+        height: 135px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    #btn{
+        display: flex;
+        justify-content: center;
+    }
+    #btn>span{
+        width: 5px;
+        height: 35px;
+        margin-left: 10px;
+    }
+    #btn>span:nth-child(1){
+        transform: rotate(15deg);
+    }
+    
+    
+    /*---------------------section2-------------------------------*/
+    
+    #sec2{
+        width: 100%;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        padding: 120px 0;
+    }
+    #sec2_box{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec2_inbox{
+        width: 49%;
+        overflow: hidden;
+        position: relative;
+    }
+    .sec2_inbox>h1{
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 50px;
+        padding: 0px 30px;
+        color: white;
+        box-sizing: border-box;
+    }
+    .sec2_inbox>h3{
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        bottom: 30px;
+        padding: 0px 30px;
+        color: white;
+        box-sizing: border-box;
+    }
+    .sec2_inbox:nth-child(1), .sec2_inbox:nth-child(2){
+        margin-bottom: 2%;
+    }
+    .sec2_inbox img{
+        filter: brightness(0.5);/*1이 기본값*/
+        cursor: pointer;
+    }
+    
+    /*---------------------section3-------------------------------*/
+    
+    #sec3{
+        width: 100%;
+        overflow: hidden;
+        padding: 120px 0px;
+    }
+    #sec3_box{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sec3_inbox{
+        width: 32%;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+    .sec3_inbox>h3{
+        padding: 10px 0;
+    }
+    .sec3_inbox>span{
+        color: #666;
+    }
+    .sec3_top{
+        margin-bottom: 2%;
+    }
+    .sec3_inbox:hover img{
+        filter: opacity(0.6);
+    }
+    .sec3_inbox>img{
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    
+    
+    
+    /*---------------------section4-------------------------------*/
+    
+    #sec4{
+        width: 100%;
+        overflow: hidden;
+        padding: 120px 0px;
+        background-image: url(../img/conBox03_img01.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #sec4_box{
+        width: 100%;
+        overflow: hidden;
+    }
+    #iframe_box{
+        width: 100%;
+        height: 0; /*0으로 잡읍*/
+        /*
+        퍼센트계산기
+        16:9 => 560-315
+        560을 100으로 잡고 315의 비율을 계산,
+        */
+        padding-bottom: 56.25%;
+        position: relative;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 60px;
+        box-sizing: border-box;
+    }
+    
+    #sec4_inbox{
+        width: 100%;
+        height: 190px;
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+    
+    
+    /*---------------------section5-------------------------------*/
+    
+    #sec5{
+        width: 100%;
+        overflow: hidden;
+        padding: 120px 0px;
+    }
+    
+    /*---------------------section6-------------------------------*/
+    
+    #sec6{
+        width: 100%;
+        overflow: hidden;
+        padding: 120px 0px;
+        background-color: #f5f5f5;
+    }
+    #sec6_box{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .sec6_btn{
+        display: none;
+    }
+    #sec6_inbox{
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .news_box{
+        width: 32%;
+        overflow: hidden;
+    }
+    .news_box>h3{
+        text-overflow: ellipsis;/*넘치는 글자 ... 처리하는법 */
+        overflow: hidden;       /*                         */
+        white-space: nowrap;    /*    이 세 줄이 한 세트    */
+        padding-top: 10px;
+    }
+    .news_box>p{
+        text-overflow: ellipsis;
+        overflow: hidden;       
+        /*
+        -webkit- 크롬, 사파리
+        -mox- 파이어폭스
+        -o- 오페라
+        -ms- 익스플로러
+        웹킷은 브라우저를 만드는데 제공되는 응용 프로그램 프레임워크
+        */
+        display: -webkit-box;
+        /*컨텐츠를 지정한 줄로 제한*/
+        -webkit-line-clamp: 2;
+        /*컨텐츠를 가로, 세로로 배치*/
+        -webkit-box-orient: vertical;
+    }
+    #sec6_prev{
+        left: 0;
+    }
+    #sec6_next{
+        right: 0;
+    }
+    
+    
+    
+    /*---------------------footer-------------------------------*/
+    
+    footer{
+        width: 100%;
+        overflow: hidden;
+        padding: 80px 0px;
+    }
+    #left_footer{
+        width: 100%;
+        overflow: hidden;
+        float: left;
+    }
+    #left_footer>div{
+        width: 100%;
+        font-size: 14px;
+    }
+    #left_footer>p{
+        padding: 15px 0;
+        color: #b2b2b2;
+        font-weight: 100;
+    }
+    #right_footer{
+        width: 100%;
+        float: right;
+        overflow: hidden;
+    
+    }
+    #right_footer>select{
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+    }
+    #sns_box{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .bold{
+        color: #e5e5e5;
+        font-weight: 900;
+    }
+    .light{
+        color: #b2b2b2;
+        font-weight: 100;
+    }
+    
+    
+    
+    /*---------------------display: none-------------------------------*/
+
+    #pc_header{
+        display: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

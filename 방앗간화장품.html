@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/방앗간화장품default.css">
+    <link rel="stylesheet" href="css/방앗간화장품pc&laptop.css">
+    <link rel="stylesheet" href="css/방앗간화장품tab.css">
+    <link rel="stylesheet" href="css/방앗간화장품mobile.css">
+    <title>방앗간화장품</title>
+</head>
+<body>
+<div id="wrap">
+    <!--pc header-->
+    <header id="pc_header">
+        <!--중앙정렬 박스-->
+        <div class="align_wrap">
+            <ul id="top_menu">
+                <li><a href="#">KR</a></li>
+                <li><a href="#">EN</a></li>
+            </ul>
+            <nav>
+                <div id="logo">
+                    <img src="img/logo_on.png" alt="logo">
+                </div>
+                <ul id="main_menu">
+                    <li><a href="#">BRAND STORY</a></li>
+                    <li id="products_li"><a href="#">PRODUCTS</a>
+                        <div id="sub_menu">
+                            <h1>PRODUCTS</h1>
+                            <div id="pro_menu">
+                                <div class="inmenu">은율</div>
+                                <div class="inmenu">찰떡</div>
+                                <div class="inmenu">클린앤프레시</div>
+                                <div class="inmenu">메이비도나</div>
+                                <div class="inmenu">얀녹</div>
+                                <div class="inmenu">넥스트뷰</div>
+                            </div>
+                            <div id="menu_img">
+                                <img src="img/1591607825_LIST.jpg" alt="메뉴이미지">
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">MEDIA</a></li>
+                </ul>
+                <input type="search" placeholder="찾으시는 제품을 검색해보세요.">
+            </nav>
+        </div>
+    </header>
+    <!--tap&mobile header-->
+    <header id="m_header">
+        <nav id="m_nav">
+            <input type="checkbox" id="m_btn">
+            <label for="m_btn" id="m_label">=</label>
+            <div id="m_menubox">
+                <ul class="m_menu">
+                    <li><a href="#">BRAND STORY</a></li>
+                    <li><a href="#">+</a></li>
+                </ul>
+                <ul class="m_menu">
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">+</a></li>
+                </ul>
+                <ul class="m_menu">
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">+</a></li>
+                </ul>
+                <ul class="m_menu">
+                    <li><a href="#">MEDIA</a></li>
+                    <li><a href="#">+</a></li>
+                </ul>
+            </div>
+            <div id="m_logo">
+                <img src="img/logo_on.png" alt="">
+            </div>
+            <div id="m_zoom">
+                <img src="img/icon_search_on.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <!--section1-->
+    <section id="sec1">
+        <picture>
+        <source media="(min-width:641px)" srcset="img/MAIN_1606177099.jpg">
+        <source media="(max-width:640px)" srcset="img/MAIN2_1606178805.jpg">
+        <img src="img/MAIN_1606177099.jpg" alt="">
+        </picture>
+        <div id="btn_wrap">
+            <!--
+                btn_wrap을 100%잡고 flex로 자식 btn을 중앙정렬 시키고
+                position 중앙정렬을 잡을 필요가 없음 left:0
+                span 버튼의 갯수가 늘어나도 매번 좌우 중앙정렬을 시켜주지 않아도 괜찮음
+            -->
+            <div id="btn">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+            </div>
+        </div>
+    </section>
+    <!--section2-->
+    <section id="sec2">
+        <!--중앙정렬 박스-->
+    <div class="align_wrap">
+        <h1 class="sec_name">WELLCOME TO <strong>BANGAGAN</strong></h1>
+        <div id="sec2_box">
+            <div class="sec2_inbox">
+                <img src="img/BANNER1_1571902870.jpg" alt="">
+                <h1>EUNYUL </h1>
+                <h3>자연에서 찾은 천연 원료의 힘 건강함 아름다움</h3>
+            </div>
+            <div class="sec2_inbox">
+                <img src="img/BANNER1_1590053069.jpg" alt="">
+                <h1>MAYBDONA</h1>
+                <h3>평범한 일상을 특별하게 만들어 줄 당신만의 브랜드</h3>
+            </div>
+            <div class="sec2_inbox">
+                <img src="img/BANNER1_1571902976.jpg" alt="">
+                <h1>CHALDDUK</h1>
+                <h3>선조들의 피부 관리 노하우에서 영감을 얻다</h3>
+            </div>
+            <div class="sec2_inbox">
+                <img src="img/BANNER1_1571902948.jpg" alt="">
+                <h1>CLEAN & FRESH</h1>
+                <h3>편견은 지우고 개성은 살려 나를 가장 나답게!</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--section3-->
+    <section id="sec3">
+        <!--중앙정렬 박스-->
+     <div class="align_wrap">
+        <h1 class="sec_name">NEW<strong>ITEMS</strong></h1>
+        <div id="sec3_box">
+            <div class="sec3_inbox sec3_top">
+                <img src="img/GOODS1_1638757269.jpg" alt="마스카라">
+                <h3>메이비도나 아임폴링 롱앤컬 마스카라</h3>
+                <span>한 번의 터치로 완벽하게</span>
+            </div>
+            <div class="sec3_inbox sec3_top">
+                <img src="img/GOODS1_1635726948.jpg" alt="멀티밤">
+                <h3>은율 모이스처 글로우 멀티밤</h3>
+                <span>스틱 하나로 끝내는 피부 잔주름 관리!</span>
+            </div>
+            <div class="sec3_inbox sec3_top">
+                <img src="img/GOODS1_1632816704.jpg" alt="폼클렌저">
+                <h3>데일리 케어 아크네 버블 폼 클렌저</h3>
+                <span>모공 속 노폐물까지 제거</span>
+            </div>
+            <div class="sec3_inbox">
+                <img src="img/GOODS1_1630981551.jpg" alt="미스트">
+                <h3>프롬 센트 바디 미스트 6종</h3>
+                <span>감성 터치 바디 미스트</span>
+            </div>
+            <div class="sec3_inbox">
+                <img src="img/GOODS1_1629875354.jpg" alt="톤업크림">
+                <h3>은율 데일리케어 옴므 톤업 크림</h3>
+                <span>남자 피부, 자연스럽게 밝혀주다</span>
+            </div>
+            <div class="sec3_inbox">
+                <img src="img/GOODS1_1629353978.jpg" alt="핸드크림">
+                <h3>은율 마유 핸드크림 5개입</h3>
+                <span>손끝까지 마유</span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--section4-->
+    <section id="sec4">
+     <div class="align_wrap">
+        <h1 class="sec_name sec4_name">BANGAGAN'S<strong>MOVIE</strong></h1>
+        <div id="sec4_box">
+            <!--영상,지도 등 HTML에 다른 문서를 포함시킬 때 사용하는 태그-->
+            <div id="iframe_box">
+                <iframe src="https://www.youtube.com/embed/Lf8FM29SCy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="sec4_inbox">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+        </div>
+     </div>
+    </section>
+    <!--section5-->
+    <section id="sec5">
+     <div class="align_wrap">
+        <h1 class="sec_name">INSTAGRAM<strong>#bangacosmetic</strong></h1>
+     </div>        
+    </section>
+    <!--section6-->
+    <section id="sec6">
+     <div class="align_wrap">
+        <h1 class="sec_name">BANGAGAN<strong>NEWS</strong></h1>
+        <div id="sec6_box">
+            <div class="sec6_btn" id="sec6_prev">
+                <img src="img/btnPrev.png" alt="이전버튼">
+            </div>
+                <div id="sec6_inbox">
+                    <div class="news_box">
+                        <img src="img/1564385395_LIST.jpg" alt="">
+                        <h3>베트남 메디케어 입점 - 스킨 케어를 책임지다!</h3>
+                        <p>베트남 드럭스토어의 양대산맥중 하나로 손꼽히는 메디케어에 '은율'이 2019년 입점 확정!</p>
+                    </div>
+                    <div class="news_box">
+                        <img src="img/1550649254_LIST.jpg" alt="">
+                        <h3>미국 진출 - 클린앤프레시 미국 전역을 강타!</h3>
+                        <p>㈜방앗간화장품 럭셔리 뷰티브랜드 은율 클린앤프레시 가 미국에 1500여개의 점포를 보유한 Bed Bath & Beyond에 2019년 3월 입점을 기점으로 하여 미국 뷰티스킨케어 시장에 큰 돌풍을 불러 일으킬것으로 예상된다.  
+                        </p>
+                    </div>
+                    <div class="news_box">
+                        <img src="img/1564537880_LIST.jpg" alt="">
+                        <h3>러시아 진출 - 클린앤프레시가 러시아 최대 뷰티쇼핑몰 골든애플을 접수하다!</h3>
+                        <p>은율 클린앤프레시 브랜드가  320여개의 매장을 보유한 러시아 최대 뷰티쇼핑몰 "Golden apple 골든애플"에서 절찬리 판매중이다.
+                        </p>
+                    </div>
+                </div>
+
+
+            <div class="sec6_btn" id="sec6_next">
+                <img src="img/btnNext.png" alt="다음버튼">
+            </div>
+
+
+
+        </div>
+     </div>     
+    </section>
+    <!--footer-->
+    <footer>
+     <div class="align_wrap">
+        <div id="left_footer">
+            <div>
+                <span class="bold">Company :</span>
+                <span class="light">Bangagan Cosmetics Co., ltd.</span>
+                <span class="bold">Representative :</span>
+                <span class="light">Im Young Sik</span>
+                <span class="bold">Corporate business nuber :</span>
+                <span class="light">220-87-75028[사업자정보확인하기]</span>
+            </div>
+            <div>
+                <span class="bold">Online business number :</span>
+                <span class="light">제 2016-경기시흥-0089호</span>
+                <span class="bold">Privacy officer :</span>
+                <span class="light">Bangagan cosmetic</span>
+                <span class="bold">E-mail :</span>
+                <span class="light">bangagan@bangacos.com</span>
+            </div>
+            <div>
+                <span class="bold">Address :</span>
+                <span class="light">36-5, Geumhwa-ro, 627 beon-gil, Siheung-si, Gyeonggi-do, South Korea</span>
+            </div>
+            <p>
+                Copyright ⓒ Bangagan Cosmetics Co., ltd.. All Rights Reserved.
+            </p>
+        </div>
+        <div id="right_footer">
+            <select>
+                <option>메뉴1</option>
+                <option>메뉴2</option>
+            </select>
+            <div id="sns_box">
+                <div class="sns_img">
+                    <img src="img/fSns01.png" alt="페이스북">
+                </div>
+                <div class="sns_img">
+                    <img src="img/fSns02.png" alt="인스타그램">
+                </div>
+                <div class="sns_img">
+                    <img src="img/fSns03.png" alt="유튜브">
+                </div>
+            </div>
+        </div>
+
+     </div>
+    </footer>
+
+
+</div>
+</body>
+</html>
